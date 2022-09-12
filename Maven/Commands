@@ -1,2 +1,5 @@
 [Jenkins]
 clean install package
+
+[Maven]
+mvn clean verify sonar:sonar
