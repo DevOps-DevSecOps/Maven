@@ -1,1 +1,2 @@
-
+[Jenkins]
+clean install package
