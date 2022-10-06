@@ -2,6 +2,9 @@ It is a popular open-source build tool developed by the Apache.
 It is written in Java and is used to build projects written in C#, Scala, Ruby, etc.
 It is based on POM (Project Object Model).
 
+[Architecture]
+
+
 [Repository]
 It is a directory of packaged JAR file with pom.xml file.
 Maven searches for dependencies in the repositories.
@@ -16,3 +19,5 @@ We can change the location of Maven Local Repository by changing the
 ● Central Repository
 
 ● Remote Repository
+
+[]
