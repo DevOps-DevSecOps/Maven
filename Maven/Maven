@@ -4,8 +4,12 @@ It is based on POM (Project Object Model).
 [Repository]
 It is a directory of packaged JAR file with pom.xml file.
 Maven searches for dependencies in the repositories.
-Maven searches for the dependencies in the following order :-> 'Local Repository' 
+Maven searches for the dependencies in the following order :-> 'Local Repository' then 'Central Repository' then 'Remote Repository'
+                Local Repository ---> Central Repository ---> Remote Repository
 There are 3 types of Maven Repository.
 ● Local Repository
+It is located in local system.
+It is created by the maven when run any maven command.
+By default, Maven Local Repository is
 ● Central Repository
 ● Remote Repository
