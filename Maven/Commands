@@ -1,6 +1,7 @@
 [Jenkins]
-● Lifecycle Phases {default}
+● Lifecycle Phases {Default}
 validate
+initialize
 package
 install
 deploy
@@ -11,8 +12,10 @@ pre-clean
 post-clean
 ● Lifecycle Phases {Site}
 site
+pre-site
+post-site
 site-deploy
-● Goals {default}
+● Goals {Default}
 plugin:descriptor
 resources:resources
 compiler:compile
@@ -31,15 +34,20 @@ ejb3:ejb3
 install:install
 deploy:deploy
 ● Goals {Clean}
-
+clean:clean
 ● Goals {Site}
 site:site
 site:deploy
 
 [Maven]
-● default Lifecycle Phases
+● Lifecycle Phases {Default}
 mvn verify
+mvn install
+mvn deploy
+● Lifecycle Phases {Default & Clean}
+mvn clean install
 mvn clean deploy
+
 ● Lifecycle Phases & Goals
 mvn clean dependency:copy-dependencies package                      # PLUGIN:GOAL=dependency:copy-dependencies
 mvn clean verify sonar:sonar                                        # PLUGIN:GOAL=sonar:sonar
