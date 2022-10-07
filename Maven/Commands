@@ -1,5 +1,45 @@
 [Jenkins]
+● Lifecycle Phases {default}
+validate
+package
+install
+deploy
 clean install package
+● Lifecycle Phases {Clean}
+clean
+pre-clean
+post-clean
+● Lifecycle Phases {Site}
+site
+site-deploy
+● Goals {default}
+plugin:descriptor
+resources:resources
+compiler:compile
+compiler:testCompile
+resources:resources
+resources:testResources
+surefire:test
+ear:generate-application-xml
+jar:jar
+ear:ear
+war:war
+rar:rar
+par:par
+ejb:ejb
+ejb3:ejb3
+install:install
+deploy:deploy
+● Goals {Clean}
+
+● Goals {Site}
+site:site
+site:deploy
 
 [Maven]
-mvn clean verify sonar:sonar
+● default Lifecycle Phases
+mvn verify
+mvn clean deploy
+● Lifecycle Phases & Goals
+mvn clean dependency:copy-dependencies package                      # PLUGIN:GOAL=dependency:copy-dependencies
+mvn clean verify sonar:sonar                                        # PLUGIN:GOAL=sonar:sonar
