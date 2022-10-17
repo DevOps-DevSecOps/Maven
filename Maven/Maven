@@ -2,8 +2,29 @@ It is a popular open-source build tool developed by the Apache.
 It is written in Java and is used to build projects written in C#, Scala, Ruby, etc.
 It is based on POM (Project Object Model).
 
-[Architecture]
+[Core Concepts]
+● POM (Project Object Model)
+Maven reads pom.xml file to accomplish its configuration and operations.
+It is an XML file format that contains information related to the project and configuration information such as dependencies, source directory, plugin, goals, etc.
+It is used by Maven to build the project.
+● Dependencies and Repositories
+Dependencies are external Java libraries required for Project and repositories are directories of packaged JAR files.
+The local repository is just a directory on local machine hard drive.
+If the dependencies are not found in the local Maven repository, then Maven downloads them from a central Maven repository and puts them in your local repository.
+● Build LifeCycles, Phases and Goals
+A Build LifeCycles consists of a sequence of build phases and each build phase consists of a sequence of goals.
+Maven command is the name of a build lifecycle, phase or goal.
+If a lifecycle is requested executed by giving maven command, all build phases in that life cycle are executed also.
+If a build phase is requested executed, all build phases before it in the defined sequence are executed too.
+● Build Profiles
+It is used to set of configuration values which allows you to build your project using different configurations.
+For example, It may need to build your project for your local computer, for development and test. To enable different builds you can add different build profiles to your POM files using its profiles elements and are triggered in the variety of ways.
+● Build Plugins
+It is used to perform specific goal.
+It can add a plugin to the POM file.
+Maven has some standard plugins can use and can also implement own in Java.
 
+[Architecture]
 
 [Repository]
 It is a directory of packaged JAR file with pom.xml file.
