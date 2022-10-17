@@ -25,6 +25,7 @@ It can add a plugin to the POM file.
 Maven has some standard plugins can use and can also implement own in Java.
 
 [Architecture]
+Maven -------Read pom.xml------->> POM File / pom.xml (Dependencies, Plugins, LifeCycles+Phases+Goals, Profiles) -------------->> Maven Repository (Local, Central, Remote)
 
 [Repository]
 It is a directory of packaged JAR file with pom.xml file.
