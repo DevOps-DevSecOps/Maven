@@ -40,6 +40,8 @@ site:site
 site:deploy
 
 [Maven]
+● Version
+mvn -v
 ● Lifecycle Phases {Default}
 mvn verify
 mvn install
