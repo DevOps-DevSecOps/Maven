@@ -26,6 +26,10 @@ Maven has some standard plugins can use and can also implement own in Java.
 
 [Architecture]
 Maven -------Read pom.xml------->> POM File / pom.xml (Dependencies, Plugins, LifeCycles+Phases+Goals, Profiles) -------------->> Maven Repository (Local, Central, Remote)
+1. Configure a Maven, which is stored in a pom.xml file.
+2. Maven read pom.xml file. The POM file includes all of the configurations that Maven needs.
+3. It download the dependencies defined in pom.xml into the Local Repository from the Central Repository OR Remote Repository.
+4. It execute LifeCycles, Phases, Goals, Plugins, etc defines in specifies build path.
 
 [Repository]
 It is a directory of packaged JAR file with pom.xml file.
