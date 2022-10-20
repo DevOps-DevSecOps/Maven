@@ -43,13 +43,16 @@ site:deploy
 ● Version
 mvn -v
 ● Lifecycle Phases {Default}
+mvn package
 mvn verify
 mvn install
 mvn deploy
 ● Lifecycle Phases {Default & Clean}
 mvn clean install
 mvn clean deploy
-
+● Goals {Default}
+mvn jar:help                                                        # PLUGIN_NAME:help
+mvn jar:jar                                                         # PLUGIN_NAME:GOAL_NAME=jar:jar (jar plugin’s jar goal)
 ● Lifecycle Phases & Goals
-mvn clean dependency:copy-dependencies package                      # PLUGIN:GOAL=dependency:copy-dependencies
-mvn clean verify sonar:sonar                                        # PLUGIN:GOAL=sonar:sonar
+mvn clean dependency:copy-dependencies package                      # PLUGIN_NAME:GOAL_NAME=dependency:copy-dependencies
+mvn clean verify sonar:sonar                                        # PLUGIN_NAME:GOAL_NAME=sonar:sonar
