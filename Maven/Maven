@@ -48,8 +48,10 @@ We can change the location of Maven Local Repository by changing the
 ● Central Repository
 It refers to the Maven community OR Maven official, when Maven needs to download dependencies.
 Suppose those dependencies cannot be found in the Local Repository and Maven downloads the dependencies from Central Repository.
+We can view Central Repository by this link (https://search.maven.org/).
 ● Remote Repository
 It refers to the repository present on a Web Server, when Maven needs to download dependencies.
+It also downloads these dependencies into Local Repository from Remote Repository.
 
 [Lifecycle]
 There are three built-in Lifecycles:
