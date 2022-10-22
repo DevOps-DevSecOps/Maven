@@ -46,8 +46,10 @@ It is created by the maven when run any maven command.
 By default, Maven Local Repository for Linux is "/home/USER_NAME/.m2" and Windows is "C:\Users\USER_NAME\.m2", the .m2 
 We can change the location of Maven Local Repository by changing the
 ● Central Repository
-
+It refers to the Maven community OR Maven official, when Maven needs to download dependencies.
+Suppose those dependencies cannot be found in the Local Repository and Maven downloads the dependencies from Central Repository.
 ● Remote Repository
+It refers to the repository present on a Web Server, when Maven needs to download dependencies.
 
 [Lifecycle]
 There are three built-in Lifecycles:
