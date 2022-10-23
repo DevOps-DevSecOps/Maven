@@ -54,10 +54,12 @@ It refers to the repository present on a Web Server, when Maven needs to downloa
 It also downloads these dependencies into Local Repository from Remote Repository.
 Maven Repository Settings :-
 We can change the location of Maven Local Repository .m2 changing in 2 ways.
-● Global Setting
+If both ("${maven.home}/conf/settings.xml" and "${user.home}/.m2/settings.xml") files exists, their contents gets merged with a specific user 'settings.xml' in '${user.home}/.m2' directory.
+● Global Setting - to all users in PC
 The 'settings.xml' are also called global settings.
 Maven install location path is "${maven.home}/conf/settings.xml".
-● User Setting
+● User Setting - to a specific user in PC
+If need to create for a specific user settings from scratch, it's easiest to copy the global settings from Maven installation location path is "${maven.home}/conf/settings.xml" to user's installation location path is "${user.home}/.m2/settings.xml". (OR) it's easiest to copy the global settings from your Maven installation to your ${user.home}/.m2 directory.
 The 'settings.xml' are referred to as user settings.
 A user's install location path is "${user.home}/.m2/settings.xml".
 
