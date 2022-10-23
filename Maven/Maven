@@ -56,9 +56,10 @@ Maven Repository Settings :-
 We can change the location of Maven Local Repository .m2 changing in 2 ways.
 ● Global Setting
 The 'settings.xml' are also called global settings.
-Maven installation folder path location "${maven.home}/conf/settings.xml".
+Maven install location path is "${maven.home}/conf/settings.xml".
 ● User Setting
 The 'settings.xml' are referred to as user settings.
+A user's install location path is "${user.home}/.m2/settings.xml".
 
 [Lifecycle]
 There are three built-in Lifecycles:
