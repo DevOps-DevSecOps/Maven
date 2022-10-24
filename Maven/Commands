@@ -61,6 +61,8 @@ mvn install:install
 mvn clean dependency:copy-dependencies package                      # PLUGIN_NAME:GOAL_NAME=dependency:copy-dependencies
 mvn clean verify sonar:sonar                                        # PLUGIN_NAME:GOAL_NAME=sonar:sonar
 
+[Repository]
+
 [skipTests]
 mvn install -DskipTests
 mvn clean install -DskipTests
