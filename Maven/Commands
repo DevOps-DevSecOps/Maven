@@ -60,3 +60,11 @@ mvn install:install
 ● Lifecycle Phases & Goals
 mvn clean dependency:copy-dependencies package                      # PLUGIN_NAME:GOAL_NAME=dependency:copy-dependencies
 mvn clean verify sonar:sonar                                        # PLUGIN_NAME:GOAL_NAME=sonar:sonar
+
+[skipTests]
+mvn install -DskipTests
+mvn clean install -DskipTests
+mvn package -DskipTests=true
+mvn install -Dmaven.test.skip=true
+mvn clean install -Dmaven.test.skip=true
+mvn install -Dmaven.test.skip -DskipTests
