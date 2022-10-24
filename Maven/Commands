@@ -62,6 +62,7 @@ mvn clean dependency:copy-dependencies package                      # PLUGIN_NAM
 mvn clean verify sonar:sonar                                        # PLUGIN_NAME:GOAL_NAME=sonar:sonar
 
 [Repository]
+mvn clean install -Dmaven.repo.local=FOLDER_NAME/FOLDER_NAME        # other maven repository with different location path,
 
 [skipTests]
 mvn install -DskipTests
