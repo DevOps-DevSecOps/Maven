@@ -43,6 +43,8 @@ site:deploy
 ● Version
 mvn -v
 ● Lifecycle Phases {Default}
+mvn validate
+mvn test
 mvn package
 mvn verify
 mvn install
@@ -57,17 +59,24 @@ mvn compiler:compile
 mvn jar:help                                                        # PLUGIN_NAME:help
 mvn jar:jar                                                         # PLUGIN_NAME:GOAL_NAME=jar:jar (jar plugin’s jar goal)
 mvn install:install
+● Goals {Site}
+mvn site:site
 ● Lifecycle Phases & Goals
 mvn clean dependency:copy-dependencies package                      # PLUGIN_NAME:GOAL_NAME=dependency:copy-dependencies
 mvn clean verify sonar:sonar                                        # PLUGIN_NAME:GOAL_NAME=sonar:sonar
 
 [Repository]
-mvn clean install -Dmaven.repo.local=FOLDER_NAME/FOLDER_NAME        # other maven repository with different location path,
+mvn clean install -Dmaven.repo.local=FOLDER_NAME/FOLDER_NAME        # other maven repository with different location path, no need modifications to 'settings.xml' in both different location paths
 
 [skipTests]
 mvn install -DskipTests
+mvn install -DskipTests=true
 mvn clean install -DskipTests
+mvn clean install -DskipTests=true
 mvn package -DskipTests=true
 mvn install -Dmaven.test.skip=true
 mvn clean install -Dmaven.test.skip=true
 mvn install -Dmaven.test.skip -DskipTests
+
+[SonarQube]
+mvn sonar:sonar
