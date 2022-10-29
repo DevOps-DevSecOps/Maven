@@ -132,6 +132,9 @@ It is a compressed file that contains a J2EE application.
 It consists of one or more modules that can be either web modules (packaged as a war file) or EJB modules (packaged as a jar file) or both of them.
 <packaging>ear</packaging>
 ● rar
+<packaging>rar</packaging>
 ● par
 ● ejb
 ● maven-plugin
+There might be cases when default plugins are not sufficient enough.
+<packaging>maven-plugin</packaging>
