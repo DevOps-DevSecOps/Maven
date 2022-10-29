@@ -115,7 +115,12 @@ It is to set the packaging for your project via the equally named POM element <p
 Some of the valid packaging values are jar, war, ear and pom.
 If no packaging value has been specified, it will default to jar.
 ● pom
-
+It helps to create aggregators and parent projects.
+An aggregator or multi-module project assembles submodules coming from different sources.
+These submodules are regular Maven projects and follow their own build lifecycles.
+The aggregator POM has all the references of submodules under the modules element.
+The parent POM shares certain configurations, plugins, and dependencies, along with their versions.
+<packaging>pom</packaging>
 ● jar
 It is Java Archive.
 Projects with this packaging type produce a compressed zip file with the .jar extension.
