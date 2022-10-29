@@ -114,3 +114,24 @@ It declaring the plugin goals bound to those build phases.
 It is to set the packaging for your project via the equally named POM element <packaging>.
 Some of the valid packaging values are jar, war, ear and pom.
 If no packaging value has been specified, it will default to jar.
+● pom
+
+● jar
+It is Java Archive.
+Projects with this packaging type produce a compressed zip file with the .jar extension.
+It may include pure Java classes, interfaces, resources, and metadata files.
+If nothing has been specified, Maven assumes the default packaging type is a jar.
+<packaging>jar</packaging>
+● war
+It is Web Application Archive.
+It may include Java servlets, JSPs, HTML pages, a deployment descriptor, and related resources.
+<packaging>war</packaging>
+● ear
+It is Enterprise Application Archive.
+It is a compressed file that contains a J2EE application.
+It consists of one or more modules that can be either web modules (packaged as a war file) or EJB modules (packaged as a jar file) or both of them.
+<packaging>ear</packaging>
+● rar
+● par
+● ejb
+● maven-plugin
