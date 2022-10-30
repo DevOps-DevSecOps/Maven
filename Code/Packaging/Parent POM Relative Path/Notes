@@ -1,0 +1,13 @@
+By default, Maven looks for the parent POM first at project’s root, then the local repository, and lastly in the remote repository.
+If parent POM file is not located in any other place, then you can use code tag. This relative path shall be relative to project root.
+If the parent POM is not located in the parent folder, we need to use the relativePath tag to refer to the location.
+For example, the diagram shown in below
+● aggregator (MAIN_FOLDER - pom.xml)
+  |
+  |
+  |
+  |-----> Module 1 (pom.xml)
+  |
+  |
+  |
+  |-----> Module 2 (pom.xml)
