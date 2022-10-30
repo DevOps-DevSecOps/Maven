@@ -1,0 +1,7 @@
+<artifactId>module2</artifactId>
+<parent>
+    <groupId>com.baeldung.maven-parent-pom-resolution</groupId>
+    <artifactId>module1</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <relativePath>../module1/pom.xml</relativePath>
+</parent>
