@@ -6,8 +6,8 @@ For example, the diagram shown in below
   |
   |
   |
-  |-----> Module 1 (pom.xml)
+  |-----> Module 1 (SUB_FOLDER - pom.xml)
   |
   |
   |
-  |-----> Module 2 (pom.xml)
+  |-----> Module 2 (SUB_FOLDER - pom.xml)
