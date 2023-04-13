@@ -1,5 +1,5 @@
 [Jenkins]
-● Default Lifecycle Phases
+➤ Default Lifecycle Phases
 validate
 initialize
 package
