@@ -69,6 +69,7 @@ mvn clean verify sonar:sonar                                        # PLUGIN_NAM
 mvn clean install -Dmaven.repo.local=FOLDER_NAME/FOLDER_NAME        # other maven repository with different location path, no need modifications to 'settings.xml' in both different location paths
 
 [skipTests]
+mvn verify -DskipUnitTests
 mvn install -DskipTests
 mvn install -DskipTests=true
 mvn package -DskipTests=true
