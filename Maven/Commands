@@ -1,21 +1,21 @@
 [Jenkins]
-● Lifecycle Phases {Default}
+● Default Lifecycle Phases
 validate
 initialize
 package
 install
 deploy
 clean install package
-● Lifecycle Phases {Clean}
+● Clean Lifecycle Phases
 clean
 pre-clean
 post-clean
-● Lifecycle Phases {Site}
+● Site Lifecycle Phases
 site
 pre-site
 post-site
 site-deploy
-● Goals {Default}
+● Default Goals
 plugin:descriptor
 resources:resources
 compiler:compile
@@ -33,9 +33,9 @@ ejb:ejb
 ejb3:ejb3
 install:install
 deploy:deploy
-● Goals {Clean}
+● Clean Goals
 clean:clean
-● Goals {Site}
+● Site Goals
 site:site
 site:deploy
 
