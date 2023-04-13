@@ -6,16 +6,16 @@ package
 install
 deploy
 clean install package
-● Clean Lifecycle Phases
+➤ Clean Lifecycle Phases
 clean
 pre-clean
 post-clean
-● Site Lifecycle Phases
+➤ Site Lifecycle Phases
 site
 pre-site
 post-site
 site-deploy
-● Default Goals
+➤ Default Goals
 plugin:descriptor
 resources:resources
 compiler:compile
@@ -33,9 +33,9 @@ ejb:ejb
 ejb3:ejb3
 install:install
 deploy:deploy
-● Clean Goals
+➤ Clean Goals
 clean:clean
-● Site Goals
+➤ Site Goals
 site:site
 site:deploy
 
