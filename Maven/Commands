@@ -54,6 +54,7 @@ mvn clean
 ● Lifecycle Phases {Default & Clean}
 mvn clean install
 mvn clean deploy
+mvn clean package
 ● Goals {Default}
 mvn compiler:compile
 mvn jar:help                                                        # PLUGIN_NAME:help
