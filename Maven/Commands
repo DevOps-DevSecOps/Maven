@@ -38,6 +38,8 @@ clean:clean
 ➤ Site Goals
 site:site
 site:deploy
+➤ SonarQube
+clean install sonar:sonar
 
 [Maven]
 ● Version
@@ -65,6 +67,8 @@ mvn site:site
 ● Lifecycle Phases & Goals
 mvn clean dependency:copy-dependencies package                      # PLUGIN_NAME:GOAL_NAME=dependency:copy-dependencies
 mvn clean verify sonar:sonar                                        # PLUGIN_NAME:GOAL_NAME=sonar:sonar
+● SonarQube
+mvn sonar:sonar
 
 [Repository]
 mvn clean install -Dmaven.repo.local=FOLDER_NAME/FOLDER_NAME        # other maven repository with different location path, no need modifications to 'settings.xml' in both different location paths
@@ -79,6 +83,3 @@ mvn clean install -DskipTests=true
 mvn install -Dmaven.test.skip=true
 mvn clean install -Dmaven.test.skip=true
 mvn install -Dmaven.test.skip -DskipTests
-
-[SonarQube]
-mvn sonar:sonar
