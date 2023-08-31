@@ -45,6 +45,7 @@ clean install sonar:sonar
 [Maven]
 ● Version
 mvn -v
+mvn -version
 ● Lifecycle Phases {Default}
 mvn validate
 mvn test
