@@ -5,6 +5,7 @@ initialize
 package
 install
 deploy
+clean install
 clean package
 clean install package
 ➤ Clean Lifecycle Phases
