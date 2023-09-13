@@ -5,6 +5,7 @@ It is based on POM (Project Object Model).
 [Core Concepts]
 ● POM (Project Object Model)
 Maven reads pom.xml file to accomplish its configuration and operations.
+The .xml file extension is an Extensible Markup Language (XML) file.
 It is an XML file format that contains information related to the project and configuration information such as dependencies, source directory, plugin, goals, etc.
 It is used by Maven to build the project.
 Maven searches for the POM file in the current directory when any given task needs to be executed.
