@@ -42,6 +42,8 @@ site:site
 site:deploy
 ➤ SonarQube
 clean install sonar:sonar
+clean deploy sonar:sonar
+clean package sonar:sonar
 
 [Maven]
 ● Version
