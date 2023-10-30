@@ -1,4 +1,4 @@
-[Jenkins]
+[Jenkins - Freestyle Project]
 ➤ Default Lifecycle Phases
 validate
 initialize
@@ -45,7 +45,7 @@ clean install sonar:sonar
 clean deploy sonar:sonar
 clean package sonar:sonar
 
-[Maven]
+[Maven CLI & Jenkins Pipeline]
 ● Version
 mvn -v
 mvn -version
@@ -74,6 +74,7 @@ mvn clean dependency:copy-dependencies package                      # PLUGIN_NAM
 mvn clean verify sonar:sonar                                        # PLUGIN_NAME:GOAL_NAME=sonar:sonar
 ● SonarQube
 mvn sonar:sonar
+mvn clean package sonar:sonar
 
 [Repository]
 mvn clean install -Dmaven.repo.local=FOLDER_NAME/FOLDER_NAME        # other maven repository with different location path, no need modifications to 'settings.xml' in both different location paths
