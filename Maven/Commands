@@ -53,6 +53,7 @@ mvn -version
 mvn validate
 mvn test
 mvn package
+mvn package -f FOLDER_NAME/pom.xml
 mvn verify
 mvn install
 mvn deploy
@@ -60,6 +61,7 @@ mvn deploy
 mvn clean
 ● Lifecycle Phases {Default & Clean}
 mvn clean install
+mvn clean install -f FOLDER_NAME/pom.xml
 mvn clean deploy
 mvn clean package
 ● Goals {Default}
