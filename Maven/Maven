@@ -40,6 +40,8 @@ It is a directory of packaged JAR file with pom.xml file.
 Maven searches for dependencies in the repositories.
 Maven searches for the dependencies in the following order :-> 'Local Repository' then 'Central Repository' then 'Remote Repository'
                 Local Repository ---> Central Repository ---> Remote Repository
+First it search dependency in Local Repository then if not found move to, Second it search dependency in Central Repository if not found move to, Thrid it search dependency in Remote Repository (private).
+If the dependencies are not found, Maven simply stops the processing and throws error (unable to find dependency).
 Maven Repository Types :-
 There are 3 types of Maven Repository.
 ● Local Repository
@@ -51,6 +53,7 @@ The default value is "${user.home}/.m2/repository".
 It refers to the Maven community OR Maven official, when Maven needs to download dependencies.
 Suppose those dependencies cannot be found in the Local Repository and Maven downloads the dependencies from Central Repository to Local Repository.
 We can view Central Repository by this link (https://search.maven.org/).
+It requires internet access to be searched.
 ● Remote Repository
 It refers to the repository present on a Web Server, when Maven needs to download dependencies.
 It also downloads these dependencies into Local Repository from Remote Repository.
