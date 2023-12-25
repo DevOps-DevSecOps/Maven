@@ -41,7 +41,7 @@ Maven searches for dependencies in the repositories.
 Maven searches for the dependencies in the following order :-> 'Local Repository' then 'Central Repository' then 'Remote Repository'
                 Local Repository ---> Central Repository ---> Remote Repository
 First it search dependency in Local Repository then if not found move to, Second it search dependency in Central Repository if not found move to, Thrid it search dependency in Remote Repository (private).
-If the dependencies are not found, Maven simply stops the processing and throws error (unable to find dependency).
+If the dependencies are not found in any one of the Repository, Maven simply stops the processing and throws error (unable to find dependency).
 Maven Repository Types :-
 There are 3 types of Maven Repository.
 ● Local Repository
