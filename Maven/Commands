@@ -57,6 +57,7 @@ mvn package -f FOLDER_NAME/pom.xml
 mvn verify
 mvn install
 mvn deploy
+mvn clean compile
 ● Lifecycle Phases {Clean}
 mvn clean
 ● Lifecycle Phases {Default & Clean}
@@ -88,6 +89,7 @@ mvn install -DskipTests=true
 mvn package -DskipTests=true
 mvn clean install -DskipTests
 mvn clean install -DskipTests=true
+mvn clean package -DskipTests=true
 mvn install -Dmaven.test.skip=true
 mvn clean install -Dmaven.test.skip=true
 mvn install -Dmaven.test.skip -DskipTests
