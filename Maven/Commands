@@ -58,12 +58,12 @@ mvn package -f FOLDER_NAME/pom.xml
 mvn verify
 mvn install
 mvn deploy
-mvn clean compile
 ● Lifecycle Phases {Clean}
 mvn clean
 ● Lifecycle Phases {Default & Clean}
 mvn clean install
 mvn clean install -f FOLDER_NAME/pom.xml
+mvn clean compile
 mvn clean deploy
 mvn clean package
 ● Goals {Default}
