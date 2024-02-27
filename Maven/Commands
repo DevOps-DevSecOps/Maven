@@ -88,6 +88,7 @@ mvn clean install -Dmaven.repo.local=FOLDER_NAME/FOLDER_NAME        # other mave
 mvn verify -DskipUnitTests
 mvn install -DskipTests
 mvn install -DskipTests=true
+mvn deploy -DskipTests=true
 mvn package -DskipTests=true
 mvn clean install -DskipTests
 mvn clean install -DskipTests=true
